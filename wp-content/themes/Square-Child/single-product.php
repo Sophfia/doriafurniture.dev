@@ -18,16 +18,24 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 		<?php while ( have_posts() ) : the_post(); ?>
-
+			
 			<?php get_template_part( 'template-parts/content', 'single' ); ?>
-
-			<?php echo types_render_field("product-title", array("argument1"=>"value1","argument2"=>"value2","argument2"=>"value2")); ?>
+			
+			<h1 class="product_title">
+				<?php echo types_render_field("product-title", array("argument1"=>"value1","argument2"=>"value2","argument2"=>"value2")); ?>
+			</div>
 
 			<?php echo types_render_field("default-image", array("argument1"=>"value1","argument2"=>"value2","argument2"=>"value2")); ?>
-
-			<?php echo types_render_field("product-description", array("argument1"=>"value1","argument2"=>"value2","argument2"=>"value2")); ?>
 			
-			<?php echo types_render_field("product-dimensions", array("argument1"=>"value1","argument2"=>"value2","argument2"=>"value2")); ?>
+			<div id="more_product_images">
+				<?php echo types_render_field("more-images", array("argument1"=>"value1","argument2"=>"value2","argument2"=>"value2")); ?>
+			</div>
+
+			<div id="product_description">
+				<?php echo types_render_field("product-description", array("argument1"=>"value1","argument2"=>"value2","argument2"=>"value2")); ?>
+				<?php echo types_render_field("product-dimensions", array("argument1"=>"value1","argument2"=>"value2","argument2"=>"value2")); ?>
+			</div>
+
 			<?php
 				// If comments are open or we have at least one comment, load up the comment template.
 				if ( comments_open() || get_comments_number() ) :

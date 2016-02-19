@@ -22,3 +22,16 @@
 	background: rgb(255,255,255);
 }
 
+.product_title{
+	font-size: 29 px;
+}
+
+#product_description{
+	text-align: justify;
+    /**margin-left: 61%;
+    padding-right: 0px;**/
+}
+
+#more_product_images img {
+    height: 140px;
+}
