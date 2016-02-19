@@ -12,3 +12,13 @@
  /* == Add your own styles below this line ==
 --------------------------------------------*/
 
+/*Color on scrolled nav bar*/
+#sq-masthead.sq-scrolled {
+    background: rgba(152,27,30, 0.8);
+}
+
+/*Color on footer*/
+#sq-colophon {
+	background: rgb(255,255,255);
+}
+
