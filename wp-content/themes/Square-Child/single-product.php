@@ -21,19 +21,21 @@ get_header(); ?>
 			
 			<?php get_template_part( 'template-parts/content', 'single' ); ?>
 			
-			<h1 class="product_title">
-				<?php echo types_render_field("product-title", array("argument1"=>"value1","argument2"=>"value2","argument2"=>"value2")); ?>
-			</div>
+			<div class="grid_4">
+				<h1 class="product_title">
+					<?php echo types_render_field("product-title", array("argument1"=>"value1","argument2"=>"value2","argument2"=>"value2")); ?>
+				</div>
 
-			<?php echo types_render_field("default-image", array("argument1"=>"value1","argument2"=>"value2","argument2"=>"value2")); ?>
+				<?php echo types_render_field("default-image", array("argument1"=>"value1","argument2"=>"value2","argument2"=>"value2")); ?>
 			
-			<div id="more_product_images">
-				<?php echo types_render_field("more-images", array("argument1"=>"value1","argument2"=>"value2","argument2"=>"value2")); ?>
-			</div>
+				<div id="more_product_images">
+					<?php echo types_render_field("more-images", array("argument1"=>"value1","argument2"=>"value2","argument2"=>"value2")); ?>
+				</div>
 
-			<div id="product_description">
-				<?php echo types_render_field("product-description", array("argument1"=>"value1","argument2"=>"value2","argument2"=>"value2")); ?>
-				<?php echo types_render_field("product-dimensions", array("argument1"=>"value1","argument2"=>"value2","argument2"=>"value2")); ?>
+				<div id="product_description">
+					<?php echo types_render_field("product-description", array("argument1"=>"value1","argument2"=>"value2","argument2"=>"value2")); ?>
+					<?php echo types_render_field("product-dimensions", array("argument1"=>"value1","argument2"=>"value2","argument2"=>"value2")); ?>
+				</div>
 			</div>
 
 			<?php
